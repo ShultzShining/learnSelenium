@@ -1,5 +1,7 @@
 package testNG;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -43,7 +45,12 @@ public class NewCustomer_IPTV {
 	@Parameters({"url"})
   @Test(groups= {"smoke"})
   public void login_SM_iptv(String u) {
+		WebDriver driver;
 	  System.out.println("login successful through simple---IPTV" +u);
+	  System.setProperty("Webdriver.chrome.driver","F:\\chromedriver.exe");
+	  driver= new ChromeDriver();
+	  driver.get("http://www.espncricinfo.com/");
+	  
   }
   @Test
   public void validate_workflow_iptv() {
