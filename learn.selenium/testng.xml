@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="telecom Department">
+<parameter name="url" value="SM"></parameter>
+	<test name="New Cutomer Test Cases">
+		<classes>
+			<class name="testNG.NewTest" />
+			<class name="testNG.NewCustomer_IPTV">
+				<methods>
+					<!-- exclude name=""/ -->
+					<!-- exclude name="login_ODS"/ -->
+					<include name="login_SM_iptv" />
+
+				</methods>
+
+			</class>
+			<class name="testNG.NewCustomer_DSL" />
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->
