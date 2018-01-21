@@ -47,7 +47,7 @@ public class NewCustomer_IPTV {
   public void login_SM_iptv(String u) {
 		WebDriver driver;
 	  System.out.println("login successful through simple---IPTV" +u);
-	  System.setProperty("Webdriver.chrome.driver","F:\\chromedriver.exe");
+	  System.setProperty("webdriver.chrome.driver","F:\\chromedriver.exe");
 	  driver= new ChromeDriver();
 	  driver.get("http://www.espncricinfo.com/");
 	  
